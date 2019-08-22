@@ -20,7 +20,7 @@ Yellow: #eddf1e
 }
 
 body {
-  font-family: sans-serif;
+  font-family: Tekst;
 }
 
 p {
@@ -216,7 +216,11 @@ p {
 }
 
 #bottomNav i {
-  padding-right: 10px;
+  font-size: 1.2em;
+}
+
+.fa-angle-right {
+  padding: 0 10px;
 }
 
 #banner {
@@ -412,4 +416,20 @@ footer {
 .youtube {
   background: #bb0000;
   color: white;
+}
+
+p b {
+  display: inline-block;
+  margin: 10px 0 30px 0;
+}
+
+#about, #tycho, #jonas {
+  padding-bottom: 40px;
+}
+
+#tycho {
+  overflow: hidden;
+  /* padding: 20px 0; */
+  background: #333;
+  color: #eee;
 }
