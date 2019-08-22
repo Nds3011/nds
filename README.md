@@ -2,4 +2,4 @@
 Next Digital Studio
 The site of nextdigitalstudio by Tycho & Jonas
 
-Copy here: https://github.com/Nds3011/nds.git
+Copy this: https://github.com/Nds3011/nds.git
