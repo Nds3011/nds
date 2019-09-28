@@ -2,8 +2,8 @@
 
 $(function() {
   // __________________________________________________ RANDOM COLOR
-  let colors = ["afd180", "74c9dd", "df1c1c", "eddf1e"];
-  let random = Math.floor((Math.random() * 4) + 0);
+  let colors = ["afd180", "74c9dd", "df1c1c"];
+  let random = Math.floor((Math.random() * 3) + 0);
   let randomColor = colors[random];
   console.log(randomColor);
   $('button').css({
@@ -31,9 +31,6 @@ $(function() {
       break;
     case 'df1c1c':
       $('h3').addClass('bColor3');
-      break;
-    case 'eddf1e':
-      $('h3').addClass('bColor4');
       break;
   }
 

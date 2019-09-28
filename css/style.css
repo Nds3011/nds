@@ -184,16 +184,6 @@ p {
   border-top-color: #df1c1c;
 }
 
-.bColor4::before {
-  width: 35px;
-  content: " ";
-  position: absolute;
-  border-top: solid 5px;
-  left: 0;
-  top: 0;
-  border-top-color: #eddf1e;
-}
-
 .title-section h3 {
   font-family: Title;
   text-transform: uppercase;
