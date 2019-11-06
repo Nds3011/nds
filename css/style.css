@@ -5,6 +5,17 @@ Blue  : #74c9dd
 Red   : #df1c1c
 Yellow: #eddf1e
 */
+
+::-moz-selection {
+  color: white;
+  background: #333;
+}
+
+::selection {
+  color: white;
+  background: #333;
+}
+
 @font-face {
   font-family: Title;
   src: url("../font/Bredan.otf");
@@ -29,9 +40,7 @@ p {
 
 .topNav {
   width: 100%;
-  background: #333;
   padding: 15px 0 15px 0;
-  color: #eee;
 }
 
 .topNav img {
@@ -420,6 +429,19 @@ p b {
 #tycho {
   overflow: hidden;
   /* padding: 20px 0; */
+}
+
+.negBack {
   background: #333;
   color: #eee;
+}
+
+.negBack h3::-moz-selection, .negBack p::-moz-selection {
+  color: #333 !important;
+  background: white !important;
+}
+
+.negBack h3::selection, .negBack p::selection {
+  color: #333 !important;
+  background:white !important;
 }
