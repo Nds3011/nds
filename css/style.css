@@ -422,7 +422,9 @@ p b {
   margin: 10px 0 30px 0;
 }
 
-#about, #tycho, #jonas {
+#about,
+#tycho,
+#jonas {
   padding-bottom: 40px;
 }
 
@@ -436,12 +438,59 @@ p b {
   color: #eee;
 }
 
-.negBack h3::-moz-selection, .negBack p::-moz-selection {
+.negBack h3::-moz-selection,
+.negBack p::-moz-selection {
   color: #333 !important;
   background: white !important;
 }
 
-.negBack h3::selection, .negBack p::selection {
+.negBack h3::selection,
+.negBack p::selection {
   color: #333 !important;
-  background:white !important;
+  background: white !important;
+}
+
+.scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: space-evenly;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.tile {
+  flex: 0 0 auto;
+  text-align: center;
+  background: #eee;
+  height: 200px;
+  margin: 5px;
+  margin-left: auto;
+}
+
+.tile:last-child {
+  margin-right: auto;
+}
+
+.tileInfo {
+  padding: 50px 50px 50px 50px;
+}
+
+.tileInfo span {
+  display: inline-block;
+  margin: 10px 0;
+  color: #aaa;
+}
+
+.tileInfo .tile {
+  height: 300px;
+}
+
+.tileInfo button {
+  width: 150px;
+  padding: 10px 0px;
+  bottom: 0;
 }
