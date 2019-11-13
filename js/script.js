@@ -10,6 +10,10 @@ $(function() {
     'border-color': `#${randomColor}`
   });
   $('a').css('color',`#${randomColor}`);
+  $('input[type=submit]').css({
+    'background-color': `#${randomColor}`,
+    'border-color' : `#${randomColor}`
+  });
 
   // __________________________________________________ COLOR in nav
   $('.active').css("border-bottom-color", `#${randomColor}`);
