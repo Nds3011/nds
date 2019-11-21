@@ -1,8 +1,8 @@
 'use strict';
 
 $(function () {
-  // __________________________________________________ LIGHTSLIDER
 
+  // __________________________________________________ LIGHTSLIDER
   $(".light-slider").lightSlider({
     item: 5,
     autoWidth: false,
@@ -39,35 +39,45 @@ $(function () {
     gallery: false,
     galleryMargin: 5,
     thumbMargin: 5,
-    currentPagerPosition: 'left',
+    currentPagerPosition: 'middle',
 
     enableTouch: true,
     enableDrag: true,
     freeMove: true,
     swipeThreshold: 40,
 
-    responsive: [
+    responsive: [{
+        breakpoint: 800,
+        settings: {
+          item: 3,
+          slideMove: 1,
+          slideMargin: 6,
+        }
+      },
       {
-        breakpoint:800,
+        breakpoint: 480,
         settings: {
-            item:3,
-            slideMove:1,
-            slideMargin:6,
-          }
-    },
-    {
-        breakpoint:480,
-        settings: {
-            item:2,
-            slideMove:1
-          }
-    }
+          item: 2,
+          slideMove: 1
+        }
+      }
     ],
 
     onBeforeStart: function (el) {},
-    onSliderLoad: function (el) {},
+    onSliderLoad: function (el) {
+      $('.lSSlideOuter .lSPager.lSpg > li.active a').css({
+        'background-color': `#${randomColor}`
+      });
+    },
     onBeforeSlide: function (el) {},
-    onAfterSlide: function (el) {},
+    onAfterSlide: function (el) {
+      $('.lSSlideOuter .lSPager.lSpg > li a').css({
+        'background-color': '#222'
+      });
+      $('.lSSlideOuter .lSPager.lSpg > li.active a').css({
+        'background-color': `#${randomColor}`
+      });
+    },
     onBeforeNextSlide: function (el) {},
     onBeforePrevSlide: function (el) {}
   });
@@ -77,15 +87,20 @@ $(function () {
   let random = Math.floor((Math.random() * 3) + 0);
   let randomColor = colors[random];
   console.log(randomColor);
+
   $('button').css({
     'border-color': `#${randomColor}`
   });
+
   $('a').css('color', `#${randomColor}`);
+
   $('input[type=submit]').css({
     'background-color': `#${randomColor}`,
     'border-color': `#${randomColor}`
   });
 
+  $('.ndscode span.code').css('color', `#${randomColor}`);
+  
   // __________________________________________________ COLOR in nav
   $('.active').css("border-bottom-color", `#${randomColor}`);
   $('#mainnav li a').mouseover(function () {
@@ -95,8 +110,8 @@ $(function () {
     $(this).css('border-bottom-color', `#fff`);
     $('#mainnav .active').css("border-bottom-color", `#${randomColor}`);
   });
-  // __________________________________________________ COLOR in title
 
+  // __________________________________________________ COLOR in title
   switch (randomColor) {
     case 'afd180':
       $('h3').addClass('bColor1');

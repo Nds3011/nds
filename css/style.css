@@ -314,7 +314,7 @@ button:hover {
 }
 
 #services .col-sm-4 {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .card {
@@ -500,4 +500,24 @@ form {
 .row {
   margin: 0 !important;
   margin-top: 20px !important;
+}
+
+.policy p {
+  margin-bottom: 0;
+}
+
+#policy {
+  color: #eee !important;
+}
+
+.ndscode {
+  padding-top: 15px;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+.ndscode span {
+  color: #eee;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 87.5%;
 }
