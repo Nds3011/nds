@@ -1,157 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Next Digital Studio | Home</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon2.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Next Digital Studio | Home</title>
-  <link rel="shortcut icon" type="image/png" href="img/favicon2.png">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/lightslider.js"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+  </head>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="js/lightslider.js"></script>
-  <script src="js/script.js" charset="utf-8"></script>
-</head>
-
-<body>
-  <div id="search" class="s-none">
-    <div>
-      <div class="title-section">
-        <h3>Search for something and press enter</h3>
-      </div>
-      <form id="searchFrom">
-        <input type="text" id="searchInput">
-      </form>
-    </div>
-  </div>
-  <div class="topNav negBack">
-    <div class="container">
-      <a href="index.html"><img src="img/logo4.png" alt="logo"></a>
-    </div>
-  </div>
-  <!-- <img src="img/bar.jpg" alt="bar" id="bar"> -->
-  <nav id="mainnav">
-    <div class="container">
-      <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="html/about.html">About</a></li>
-        <li><a href="html/services.html">Services</a></li>
-        <li><a href="html/portfolio.html">Portfolio</a></li>
-        <li><a href="html/contact.html">Contact</a></li>
-        <li style="float:right" id="search-btn"><a><i class="fa fa-search"></i></a></li>
-      </ul>
-    </div>
-  </nav>
-  <div id="banner">
-    <div class="aligner" style="height:100%">
+  <body>
+    <div id="search" class="s-none">
       <div>
         <div class="title-section">
-          <h3></h3>
-          <h4>The solution for all your digital needs and more</h4>
+          <h3>Search for something and press enter</h3>
         </div>
-        <button type="button" name="button">View Services</button>
-        <button type="button" name="button">Contact</button>
+        <form id="searchFrom">
+          <input type="text" id="searchInput" />
+        </form>
       </div>
     </div>
-  </div>
-  <div id="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="card">
-            <i class="fa fa-html5"></i>
-            <div class="title-section">
-              <h3>Webdevelopment</h3>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            <button type="button" name="button">Read More</button>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card">
-            <i class="fa fa-wordpress"></i>
-            <div class="title-section">
-              <h3>Wordperss sites</h3>
-            </div>
-            <p>For self-maintainable websites with a user-friendly dashboard, Wordpress is the ideal choice for you. You can choose from thousands of themes which will give you a good idea of what your site will look like.</p>
-            <button type="button" name="button">Read More</button>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card">
-            <i class="fa fa-laptop"></i>
-            <div class="title-section">
-              <h3>Hardware</h3>
-            </div>
-            <p>From fixing a broken laptop to help building your own desktop of your dreams. This is what we will help you with.To help you find the laptop / desktop you desire the most, take a look at our <a href="#">Hardware Review Page</a></p>
-            <button type="button" name="button">Read More</button>
-          </div>
-        </div>
+    <div class="topNav negBack">
+      <div class="container">
+        <a href="index.html"><img src="img/logo4.png" alt="logo" /></a>
       </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="card">
-            <i class="fa fa-window-restore"></i>
-            <div class="title-section">
-              <h3>Automatisation</h3>
-            </div>
-            <p>With automation we mean automating repetitive tasks that need to be carried out in your company. This can be very broad and can come in different forms. Please click the button below for more information.</p>
-            <button type="button" name="button">Read More</button>
+    </div>
+    <!-- <img src="img/bar.jpg" alt="bar" id="bar"> -->
+    <nav id="mainnav">
+      <div class="container">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="html/about.html">About</a></li>
+          <li><a href="html/services.html">Services</a></li>
+          <li><a href="html/portfolio.html">Portfolio</a></li>
+          <li><a href="html/contact.html">Contact</a></li>
+          <li style="float: right" id="search-btn">
+            <a><i class="fa fa-search"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="banner">
+      <div class="aligner" style="height: 100%">
+        <div>
+          <div class="title-section">
+            <h3></h3>
+            <h4>The solution for all your digital needs and more</h4>
           </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card">
-            <i class="fa fa-copyright"></i>
-            <div class="title-section">
-              <h3>Branding</h3>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            <button type="button" name="button">Read More</button>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card">
-            <i class="fa fa-file-pdf-o"></i>
-            <div class="title-section">
-              <h3>Design</h3>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            <button type="button" name="button">Read More</button>
-          </div>
+          <button type="button" name="button">View Services</button>
+          <button type="button" name="button">Contact</button>
         </div>
       </div>
     </div>
-  </div>
-  <footer>
-    <div class="container">
-      <div class="title-section">
-        <h3>Stay Connected</h3>
-      </div>
-      <div class="fsocial">
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="google"><i class="fa fa-google"></i></a>
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+    <div id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <i class="fa fa-html5"></i>
+              <div class="title-section">
+                <h3>Web development</h3>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.
+              </p>
+              <button type="button" name="button">Read More</button>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <i class="fa fa-wordpress"></i>
+              <div class="title-section">
+                <h3>Wordpress sites</h3>
+              </div>
+              <p>
+                For self-maintainable websites with a user-friendly dashboard,
+                Wordpress is the ideal choice for you. You can choose from
+                thousands of themes which will give you a good idea of what your
+                site will look like.
+              </p>
+              <button type="button" name="button">Read More</button>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <i class="fa fa-laptop"></i>
+              <div class="title-section">
+                <h3>Hardware</h3>
+              </div>
+              <p>
+                From fixing a broken laptop to help building your own desktop of
+                your dreams. This is what we will help you with.To help you find
+                the laptop / desktop you desire the most, take a look at our
+                <a href="#">Hardware Review Page</a>
+              </p>
+              <button type="button" name="button">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <i class="fa fa-window-restore"></i>
+              <div class="title-section">
+                <h3>Automatization</h3>
+              </div>
+              <p>
+                With automatization we mean automating repetitive tasks that
+                need to be carried out in your company. This can be very broad
+                and can come in different forms. Please click the button below
+                for more information.
+              </p>
+              <button type="button" name="button">Read More</button>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <i class="fa fa-copyright"></i>
+              <div class="title-section">
+                <h3>Branding</h3>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.
+              </p>
+              <button type="button" name="button">Read More</button>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <i class="fa fa-file-pdf-o"></i>
+              <div class="title-section">
+                <h3>Design</h3>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.
+              </p>
+              <button type="button" name="button">Read More</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </footer>
-  <div class="footer2">
-    <div class="container">
-      <p>Developed by <a href="#">Next Digital Studio</a></p>
+    <footer>
+      <div class="container">
+        <div class="title-section">
+          <h3>Stay Connected</h3>
+        </div>
+        <div class="fsocial">
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="google"><i class="fa fa-google"></i></a>
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+    <div class="footer2">
+      <div class="container">
+        <p>Developed by <a href="#">Next Digital Studio</a></p>
+      </div>
     </div>
-  </div>
-  <!-- <div class="policy">
+    <!-- <div class="policy">
     <div>
       <p>By entering this site you accept the use of <a href="html/cookies.html">cookies</a></p><a id="policy"><i class="fa fa-times"></i></a>
     </div>
   </div> -->
-</body>
-
+  </body>
 </html>
